@@ -1,0 +1,6 @@
+[PROJECTS]
+Count=2
+Project0=..\..\..\Download_One Drive\Program Mikrokontroler_TA\TA_Daffa.mcpar
+Project1=MyProject_TA.mcpar
+[ActiveProject]
+Index=1

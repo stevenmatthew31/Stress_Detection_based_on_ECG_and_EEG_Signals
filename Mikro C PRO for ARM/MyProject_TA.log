@@ -1,0 +1,84 @@
+0	1	mikroCARM.exe -MSF -DBG -pSTM32F746ZG -RA -BIN -LHF -DL -SSA -O11111114 -fo216 -N"C:\Users\Ferdinand\OneDrive - Institut Teknologi Sepuluh Nopember\SEMESTER 8\TA\Mikroe\MyProject_TA.mcpar" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Defs\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M7\" -SP"C:\Users\Ferdinand\OneDrive - Institut Teknologi Sepuluh Nopember\SEMESTER 8\TA\Mikroe\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\ECG Click\Uses\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\EEG Click\Uses\" -SP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\USB UART Click\Uses\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Uses\ST M7\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\ECG Click\Uses\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\EEG Click\Uses\" -IP"C:\Users\Public\Documents\Mikroelektronika\mikroC PRO for ARM\Packages\USB UART Click\Uses\" "MyProject_TA_main.c" "MyProject_TA_events_code.c" "MyProject_TA_driver.c" "MyProject_TA_resources.c" "__Lib_Math.emcl" "__Lib_MathDouble.emcl" "__Lib_Delays.emcl" "__Lib_System_F7xx.emcl" "__Lib_GPIO_32F7xx_Defs.emcl" "__Lib_GPIO_32F7xx.emcl" "__Lib_CType.emcl" "__Lib_CString.emcl" "__Lib_CMath.emcl" "__Lib_MemManager.emcl" "__Lib_Conversions.emcl" "__Lib_Sprintf.emcl" "__Lib_Button.emcl" "__Lib_ADC_32F7xx_24ch.emcl" "__Lib_I2C_1234.emcl" "__Lib_UART_123_45_6_78.emcl" "__Lib_CF.emcl" "__Lib_TFT.emcl" "__Lib_TFT_Defs.emcl" "__Lib_TouchPanel_TFT.emcl" "__Lib_Vectors.emcl" "__Lib_FIR.emcl" "__Lib_FFT.emcl" "__Lib_Q15.emcl" "__Lib_FT5XX6_gesture_decoder.emcl" "__Lib_FT5XX6.emcl" "mikromedia_7_STM32F7.emcl" "ECG_STM32_M7.emcl" "EEG_STM32_M7.emcl" "USB_UART_STM32_M7.emcl" "Click_ECG.pld" "Click_EEG.pld" "Click_USB_UART.pld"	 
+diagnostics: 0	122	Compilation Started	STM32F746ZG.c
+diagnostics: 81803	123	Compiled Successfully	STM32F746ZG.c
+diagnostics: 0	122	Compilation Started	__Lib_Delays.c
+diagnostics: 123	123	Compiled Successfully	__Lib_Delays.c
+hint: 66	1164	Variable 'cycles_div_by_10' has been eliminated by optimizer	__Lib_Delays.c
+hint: 92	1164	Variable 'NumberOfCyc' has been eliminated by optimizer	__Lib_Delays.c
+hint: 109	1164	Variable 'NumberOfCyc' has been eliminated by optimizer	__Lib_Delays.c
+diagnostics: 0	122	Compilation Started	__lib_gpio.h
+diagnostics: 809	123	Compiled Successfully	__Lib_GPIO_32F7xx_Defs.c
+diagnostics: 0	122	Compilation Started	__Lib_MemManager.c
+warning: 36	1508	Implicit conversion of int to ptr	__Lib_MemManager.c
+warning: 157	1506	Implicit conversion of pointer to int	__Lib_MemManager.c
+warning: 176	1508	Implicit conversion of int to ptr	__Lib_MemManager.c
+diagnostics: 299	123	Compiled Successfully	__Lib_MemManager.c
+diagnostics: 0	122	Compilation Started	__Lib_TFT_Defs.c
+warning: 110	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 122	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 134	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 146	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 155	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 172	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+warning: 186	1508	Implicit conversion of int to ptr	__Lib_TFT_Defs.c
+diagnostics: 4534	123	Compiled Successfully	__Lib_TFT_Defs.c
+hint: 51	1164	Variable 'temp' has been eliminated by optimizer	__Lib_TFT_Defs.c
+diagnostics: 0	122	Compilation Started	__Lib_FT5XX6_gesture_decoder.c
+warning: 25	1505	Suspicious pointer conversion	__Lib_FT5XX6_gesture_decoder.c
+warning: 32	1505	Suspicious pointer conversion	__Lib_FT5XX6_gesture_decoder.c
+warning: 39	1505	Suspicious pointer conversion	__Lib_FT5XX6_gesture_decoder.c
+warning: 46	1505	Suspicious pointer conversion	__Lib_FT5XX6_gesture_decoder.c
+warning: 53	1505	Suspicious pointer conversion	__Lib_FT5XX6_gesture_decoder.c
+diagnostics: 65	123	Compiled Successfully	__Lib_FT5XX6_gesture_decoder.c
+diagnostics: 0	122	Compilation Started	stdint.h
+diagnostics: 349	123	Compiled Successfully	mikromedia_7_STM32F7.c
+diagnostics: 0	122	Compilation Started	myproject_ta_objects.h
+diagnostics: 26	123	Compiled Successfully	MyProject_TA_main.c
+hint: 47	1354	 warning: "/*" within comment	c:\users\ferdinand\onedrive - institut teknologi sepuluh nopember\semester 8\ta\mikroe\lib.h
+hint: 54	1354	 warning: "/*" within comment	c:\users\ferdinand\onedrive - institut teknologi sepuluh nopember\semester 8\ta\mikroe\lib.h
+hint: 19	1354	 warning: "/*" within comment       /*Check_TP();  de here   iv IVT_INT_TIM8_UP_TIM13 {  ]), i_plot, 390 - 10*(eeg_ptr1->hpf_eeg[i]));	C:\Users\Ferdinand\OneDrive - Institut Teknologi Sepuluh Nopember\SEMESTER 8\TA\Mikroe\MyProject_TA_events_code.c
+diagnostics: 0	122	Compilation Started	myproject_ta_objects.h
+hint: 368	1163	Variable 'segment_mean' has been declared, but not used	lib.h
+warning: 131	1505	Suspicious pointer conversion	MyProject_TA_events_code.c
+warning: 131	1505	Suspicious pointer conversion	MyProject_TA_events_code.c
+hint: 106	1163	Variable 'j' has been declared, but not used	MyProject_TA_events_code.c
+hint: 106	1163	Variable 'k' has been declared, but not used	MyProject_TA_events_code.c
+hint: 108	1163	Variable 't' has been declared, but not used	MyProject_TA_events_code.c
+hint: 136	1163	Variable 'i_plot1' has been declared, but not used	MyProject_TA_events_code.c
+hint: 138	1163	Variable 'eegf3_value' has been declared, but not used	MyProject_TA_events_code.c
+hint: 0	1004	interrupt handler (Timer12_interrupt at 0x003B)	MyProject_TA_events_code.c
+hint: 0	1004	interrupt handler (Timer14_interrupt at 0x003D)	MyProject_TA_events_code.c
+diagnostics: 334	123	Compiled Successfully	MyProject_TA_events_code.c
+hint: 67	1164	Variable 'result' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 328	1164	Variable 'last_qrs_result' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 329	1164	Variable 't' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 365	1164	Variable 'segment_duration' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 365	1164	Variable 'limit' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 365	1164	Variable 'current_index' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 367	1164	Variable 'max_duration' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 150	1164	Variable 'input_mean' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 106	1164	Variable 'stop' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 108	1164	Variable 'ecg_value' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 106	1164	Variable 'n' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 106	1164	Variable 'ii' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 107	1164	Variable 'x' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 136	1164	Variable 'stop' has been eliminated by optimizer	MyProject_TA_events_code.c
+hint: 137	1164	Variable 'eegfp1_value' has been eliminated by optimizer	MyProject_TA_events_code.c
+diagnostics: 0	122	Compilation Started	myproject_ta_objects.h
+warning: 112	1506	Implicit conversion of pointer to int	MyProject_TA_driver.c
+warning: 112	1506	Implicit conversion of pointer to int	MyProject_TA_driver.c
+warning: 112	1506	Implicit conversion of pointer to int	MyProject_TA_driver.c
+warning: 112	1506	Implicit conversion of pointer to int	MyProject_TA_driver.c
+warning: 1916	1505	Suspicious pointer conversion	MyProject_TA_driver.c
+diagnostics: 1943	123	Compiled Successfully	MyProject_TA_driver.c
+diagnostics: 0	122	Compilation Started	MyProject_TA_resources.c
+diagnostics: 3976	123	Compiled Successfully	MyProject_TA_resources.c
+diagnostics: 0	127	All files Compiled in 1657 ms	 
+hint: 0	1144	Used RX: 16 (100%)   Free RX: 0 (0%)	Used RX: 16 (100%)   Free RX: 0 (0%)
+hint: 0	1144	Static RAM (bytes): 248719   Dynamic RAM (bytes): 78957	Static RAM (bytes): 248719   Dynamic RAM (bytes): 78957
+hint: 0	1144	Used ROM (bytes): 139767 (13%)  Free ROM (bytes): 908809 (87%)	Used ROM (bytes): 139767 (13%)  Free ROM (bytes): 908809 (87%)
+diagnostics: 0	125	Project Linked Successfully	MyProject_TA.mcpar
+hint: 124	1004	Possible stack overflow : recursion or cross-calling detected.	MyProject_TA_events_code.c
+diagnostics: 0	128	Linked in 2203 ms	 
+diagnostics: 0	129	Project 'MyProject_TA.mcpar' completed: 8250 ms	 
+diagnostics: 0	103	Finished successfully: 22 Jun 2023, 20:39:14	MyProject_TA.mcpar

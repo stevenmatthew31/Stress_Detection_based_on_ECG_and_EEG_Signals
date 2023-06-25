@@ -128,7 +128,7 @@ void applicationTaskECG() {
 
     if (i >= 7){
        TFT_Set_Pen(CL_LIME, 2);
-       TFT_Line((i_qrs-1)*2, 155 - 35*(get_rotating_index(ecg_ptr->qrs_result, N_DISPLAY_ECG, i-1)), (i_qrs*2), 155 - 35*(get_rotating_index(ecg_ptr->qrs_result, N_DISPLAY_ECG, i)));
+       TFT_Line((i_qrs-1)*2, 155 - 35*((ecg_ptr->qrs_result[i-1])), (i_qrs*2), 155 - 35*((ecg_ptr->qrs_result[i])));
     }
 }
 
@@ -141,9 +141,9 @@ void applicationTaskEEG(){
      eegfp1_value = (float) ADC2_value * (3.3/(4095));
      stop = eeg_process(eeg_ptr, eegfp1_value);
 
-//     ADC3_value = ADC3_Get_Sample(13);
-//     eegf3_value = (float) ADC3_value * (3.3/(4095));
-//     stop = eeg_process(eeg_ptr1, eegf3_value);
+    ADC3_value = ADC3_Get_Sample(13);
+    eegf3_value = (float) ADC3_value * (3.3/(4095));
+    stop = eeg_process(eeg_ptr1, eegf3_value);
      
      i = eeg_ptr->length_eeg - 1;
      i_plot = (eeg_ptr->length_eeg -1) % N_DISPLAY_EEG;
@@ -287,7 +287,7 @@ void ButtonRound8OnClick() {
         ButtonRound8.Caption = "STOP";
         ButtonRound8.Color = CL_RED;
      } else {
-       ecg_init(ecg_ptr, 125.0, -500.0, -500.0, 100.0);
+       ecg_init(ecg_ptr, 250.0, 100.0, 100.0, 100.0);
        eeg_init(eeg_ptr, 512.0);
        eeg_init(eeg_ptr1, 512.0);
        ButtonRound8.Caption = "RUN";

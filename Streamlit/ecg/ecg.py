@@ -3,7 +3,7 @@ from .decomposition import decomposition
 from .tools import get_index
 from stqdm import stqdm
 
-def ecg(signal, th1, th2, th3, fs = 125):
+def ecg(signal, th1, th2, th3, fs = 250):
     w2fb1, w2fb2, w2fb3 = decomposition(signal)
     ndata = len(signal)
     gradien1 = np.zeros(ndata)
@@ -20,7 +20,7 @@ def ecg(signal, th1, th2, th3, fs = 125):
         
     return signal, rri(hasil_qrs, fs=fs), hasil_qrs
 
-def rri(tsignal, fs=125):
+def rri(tsignal, fs=250):
     t = 1/fs
     k = []
     for i in stqdm(range(len(tsignal-1)), desc='Count RR'):

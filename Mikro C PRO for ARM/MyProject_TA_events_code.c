@@ -324,7 +324,6 @@ void ButtonRound1OnClick() {
      TFT_Set_Pen(CL_WHITE, 1);
      TFT_Set_Brush(0, 0, 0, LEFT_TO_RIGHT, CL_WHITE, CL_WHITE);
      TFT_Rectangle(20, 20, 760, 440);
-     TFT_Set_Font(Times_New_Roman25x31_Regular, CL_BLACK, FO_HORIZONTAL);
      Delay_ms(150);
      predict();
      Delay_ms(10);

@@ -421,10 +421,19 @@ void predict(){
          }
      }
      if (maxindex == 0){
+        TFT_Set_Font(Times_New_Roman25x31_Regular, CL_BLACK, FO_HORIZONTAL);
         TFT_Write_Text("Stres   Low", 285, 210);
+        TFT_Set_Font(Times_New_Roman15x19_Regular, CL_BLACK, FO_HORIZONTAL);
+        TFT_Write_Text("Luangkan waktu untuk mendukung kesejahteraan dan atur waktu istirahat untuk memulihkan energi", 20, 300);
      } else if (maxindex == 1){
+       TFT_Set_Font(Times_New_Roman25x31_Regular, CL_BLACK, FO_HORIZONTAL);
        TFT_Write_Text("Stres   Medium", 285, 210);
+       TFT_Set_Font(Times_New_Roman15x19_Regular, CL_BLACK, FO_HORIZONTAL);
+       TFT_Write_Text("Terapkan meditasi/yoga untuk relaksasi dan jaga komunikasi dengan orang sekitar untuk dukungan sosial", 20, 300);
      } else if (maxindex == 2){
+       TFT_Set_Font(Times_New_Roman25x31_Regular, CL_BLACK, FO_HORIZONTAL);
        TFT_Write_Text("Stres   High", 285, 210);
+       TFT_Set_Font(Times_New_Roman15x19_Regular, CL_BLACK, FO_HORIZONTAL);
+       TFT_Write_Text("Cari bantuan profesional dalam mengatasi stres yang lebih tinggi dan menjaga keseimbangan mental", 20, 300);
      }
 }

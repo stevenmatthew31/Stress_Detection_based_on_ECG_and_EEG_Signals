@@ -208,7 +208,7 @@ void Timer14_interrupt() iv IVT_INT_TIM8_TRG_COM_TIM14 {
   //Enter your code here
 //  Check_TP();
   if (buttonFlag1){
-//     applicationTaskECG();
+     applicationTaskECG();
   }
 }
 

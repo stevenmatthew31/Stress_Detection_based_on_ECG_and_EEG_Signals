@@ -328,8 +328,8 @@ void ecg_dwt_decomposition(ECG_Instance_t* ecg) {
     int last_qrs_result;
     float gradient1, gradient2, gradient3, t;
     ecg->w2fb1[i] = qj1[0] * get_index(ecg->signal, i) + qj1[1] * get_index(ecg->signal, i - 1);
-    ecg->w2fb2[i] = qj2[0] * get_index(ecg->signal, i) + qj2[1] * get_index(ecg->signal, i - 1) + qj2[2] * get_index(ecg->signal, i - 2) + qj2[3] * get_index(ecg->signal, i - 3) + qj2[4] * get_index(ecg->signal, i - 4) + qj2[5] * get_index(ecg->signal, i - 5);
-    ecg->w2fb3[i] = qj3[0] * get_index(ecg->signal, i) + qj3[1] * get_index(ecg->signal, i - 1) + qj3[2] * get_index(ecg->signal, i - 2) + qj3[3] * get_index(ecg->signal, i - 3) + qj3[4] * get_index(ecg->signal, i - 4) + qj3[5] * get_index(ecg->signal, i - 5) + qj3[6] * get_index(ecg->signal, i - 6) + qj3[7] * get_index(ecg->signal, i - 7) + qj3[8] * get_index(ecg->signal, i - 8) + qj3[9] * get_index(ecg->signal, i - 9) + qj3[10] * get_index(ecg->signal, i - 10) + qj3[11] * get_index(ecg->signal, i - 11) + qj3[12] * get_index(ecg->signal, i - 12) + qj3[13] * get_index(ecg->signal, i - 13);
+    ecg->w2fb2[i - 1] = qj2[0] * get_index(ecg->signal, i) + qj2[1] * get_index(ecg->signal, i - 1) + qj2[2] * get_index(ecg->signal, i - 2) + qj2[3] * get_index(ecg->signal, i - 3) + qj2[4] * get_index(ecg->signal, i - 4) + qj2[5] * get_index(ecg->signal, i - 5);
+    ecg->w2fb3[i - 3] = qj3[0] * get_index(ecg->signal, i) + qj3[1] * get_index(ecg->signal, i - 1) + qj3[2] * get_index(ecg->signal, i - 2) + qj3[3] * get_index(ecg->signal, i - 3) + qj3[4] * get_index(ecg->signal, i - 4) + qj3[5] * get_index(ecg->signal, i - 5) + qj3[6] * get_index(ecg->signal, i - 6) + qj3[7] * get_index(ecg->signal, i - 7) + qj3[8] * get_index(ecg->signal, i - 8) + qj3[9] * get_index(ecg->signal, i - 9) + qj3[10] * get_index(ecg->signal, i - 10) + qj3[11] * get_index(ecg->signal, i - 11) + qj3[12] * get_index(ecg->signal, i - 12) + qj3[13] * get_index(ecg->signal, i - 13);
 
     gradient1 = ecg->w2fb1[i] - get_rotating_index(ecg->w2fb1, N_DISPLAY_ECG, i - 1);
     gradient2 = ecg->w2fb2[i] - get_rotating_index(ecg->w2fb2, N_DISPLAY_ECG, i - 2);

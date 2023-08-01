@@ -1,4 +1,4 @@
-## Stress Detection based on ECG and EEG_Signals
+## Stress Detection based on ECG and EEG Signals
 Based on a survey by the American Psychological Association, more than half of America's population has reported stress as a source of health problems as well as the 2018 Indonesian Basic Health Research, showing more than 19 million people experience emotional stress disorders, and more than 12 million people experience depression.
 
 ## Backgrounder
